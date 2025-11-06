@@ -1,4 +1,5 @@
 // src/context/ThemeProviderWrapper.tsx
+import type { Theme } from "@emotion/react";
 import React, {
   createContext,
   useContext,
@@ -6,7 +7,23 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { darkTheme, lightTheme, Theme, ThemeName } from "../theme";
+import { darkTheme, lightTheme, type ThemeName } from "../../theme/theme";
+// src/emotion.d.ts
+import "@emotion/react";
+
+declare module "@emotion/react" {
+  export interface Theme {
+    colors: {
+      background: string;
+      surface: string;
+      surfaceAlt: string;
+      text: string;
+      textMuted: string;
+      border: string;
+      primary: string;
+    };
+  }
+}
 
 type ThemeContextValue = {
   theme: Theme;
