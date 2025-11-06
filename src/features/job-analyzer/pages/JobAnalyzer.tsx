@@ -6,7 +6,7 @@ import { JobAnalyzerSubTitle } from "../components/JobAnalyzerSubTitle";
 import { TopSkillsTitle } from "../components/TopSkillsTitle";
 import { JDCard } from "../components/JDCard";
 
-export const job_analyzer = () => {
+export const JobAnalyzer = () => {
   return (
     <Box>
       <JobAnalyzerTitle></JobAnalyzerTitle>

@@ -1,6 +1,6 @@
 import Container from "@mui/material/Container";
-import { HomeTitle } from "../../home/components/HomeTitle";
-import { TopBar } from "../../home/components/TopBar";
+import { HomeTitle } from "../components/HomeTitle";
+import { TopBar } from "../components/TopBar";
 import { Registration } from "../../registration/pages/Registration";
 
 export const LandingPage = () => {

@@ -2,6 +2,12 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../features/home/pages/Home";
 import { LandingPage } from "../features/landing-page/pages/LandingPage";
+import { LoginWindow } from "../features/registration/components/LoginWindow";
+import { Registration } from "../features/registration/pages/Registration";
+import { JobAnalyzer } from "../features/job-analyzer/pages/JobAnalyzer";
+import { JobMatcher } from "../features/job-matcher/pages/JobMatcher";
+import { JobProgressTracker } from "../features/job-progress-tracker/pages/JobProgressTracker";
+import { SignUpWindow } from "../features/registration/components/SignUpWindow";
 // import other pages as needed
 
 export const AppRoutes = () => {
@@ -9,10 +15,17 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<LoginWindow />} />
+      <Route path="/sing_up" element={<SignUpWindow />} />
+      <Route path="/landing_page" element={<LandingPage />} />
+      <Route
+        path="/registration"
+        element={<Registration firstTimeUser={false} />}
+      />
+      <Route path="/job_analyzer" element={<JobAnalyzer />} />
+      <Route path="/job_matcher" element={<JobMatcher />} />
+      <Route path="/job_progress_tracker" element={<JobProgressTracker />} />
+      <Route path="/learning_path" element={<JobProgressTracker />} />
     </Routes>
   );
 };
