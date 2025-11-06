@@ -6,6 +6,11 @@ import { Home } from "../features/home/pages/Home";
 export const AppRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/" element={<Home />} />
     </Routes>
   );
