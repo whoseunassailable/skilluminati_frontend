@@ -4,16 +4,16 @@ import { SignUpWindow } from "../components/SignUpWindow";
 import { Home } from "../../home/pages/Home";
 
 interface RegistrationProps {
-  loggedIn: boolean;
+  firstTimeUser: boolean;
 }
 
-export const Registration = ({ loggedIn }: RegistrationProps) => {
+export const Registration = ({ firstTimeUser }: RegistrationProps) => {
   return (
     <>
-      {loggedIn === true ? (
+      {firstTimeUser === true ? (
         <Home></Home>
       ) : (
-        <Box>
+        <Box width={"50vw"} p={"3vw"} sx={{ placeSelf: "center" }}>
           <LoginWindow></LoginWindow>
           <SignUpWindow></SignUpWindow>
         </Box>

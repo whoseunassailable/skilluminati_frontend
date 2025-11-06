@@ -12,7 +12,7 @@ export const LandingPage = () => {
     >
       <TopBar />
       <HomeTitle />
-      <Registration loggedIn={false} />
+      <Registration firstTimeUser={false} />
     </Container>
   );
 };
