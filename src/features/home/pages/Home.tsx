@@ -1,15 +1,18 @@
 import { Container } from "@mui/material";
 import { TopBar } from "../components/TopBar";
 import { HomeTitle } from "../components/HomeTitle";
-import { LoginWindow } from "../../registration/components/LoginWindow";
-import { SignUpWindow } from "../../registration/components/SignUpWindow";
+import { Registration } from "../../registration/pages/Registration";
 
 export const Home = () => {
   return (
-    <Container>
-      <TopBar></TopBar>
-      <HomeTitle></HomeTitle>
-      <Registration></Registration>
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{ width: "95%", mx: "2vw", justifySelf: "center" }}
+    >
+      <TopBar />
+      <HomeTitle />
+      <Registration />
     </Container>
   );
 };

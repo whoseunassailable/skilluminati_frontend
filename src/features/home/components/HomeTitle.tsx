@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
+import { AppTypography } from "../../../common/constants/AppTypography";
 
 export const HomeTitle = () => {
   return (
-    <Typography>
-      Turn any job description into a personalized learning roadmap.
+    <Typography sx={AppTypography.homepageSubTitle}>
+      Turn any job description <br /> into a personalized <br />
+      learning roadmap.
     </Typography>
   );
 };

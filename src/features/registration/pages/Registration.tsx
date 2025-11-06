@@ -1,12 +1,23 @@
 import { Box } from "@mui/material";
 import { LoginWindow } from "../components/LoginWindow";
 import { SignUpWindow } from "../components/SignUpWindow";
+import { Home } from "../../home/pages/Home";
 
-export const Registration = () => {
+interface RegistrationProps {
+  loggedIn: boolean;
+}
+
+export const Registration = ({ loggedIn }: RegistrationProps) => {
   return (
-    <Box>
-      <LoginWindow></LoginWindow>
-      <SignUpWindow></SignUpWindow>
-    </Box>
+    <>
+      {loggedIn === true ? (
+        <Home></Home>
+      ) : (
+        <Box>
+          <LoginWindow></LoginWindow>
+          <SignUpWindow></SignUpWindow>
+        </Box>
+      )}
+    </>
   );
 };

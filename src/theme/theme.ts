@@ -1,48 +1,33 @@
-// src/theme.ts
+// src/theme/theme.ts
+import type { Theme } from "@emotion/react";
 
-export type ThemeName = "dark" | "light";
-
-export type Theme = {
-  name: ThemeName;
-  colors: {
-    background: string;
-    surface: string;
-    surfaceAlt: string;
-    text: string;
-    textMuted: string;
-    border: string;
-    primary: string;
-    primarySoft: string;
-    danger: string;
-  };
-};
+export type ThemeName = "light" | "dark";
 
 export const darkTheme: Theme = {
-  name: "dark",
   colors: {
-    background: "#0B0D11", // page bg
-    surface: "#0F1115", // panels
-    surfaceAlt: "#14171D",
-    text: "#F3F4F6",
-    textMuted: "#9CA3AF",
-    border: "rgba(255,255,255,0.04)",
-    primary: "#3B82F6", // blue
-    primarySoft: "rgba(59,130,246,0.12)",
-    danger: "#F43F5E",
+    // page background
+    background: "#05070B", // very dark, almost black
+    // cards / panels
+    surface: "#0D1015",
+    surfaceAlt: "#11141A",
+    // text
+    text: "#F4F5F6",
+    textMuted: "rgba(244,245,246,0.55)",
+    // borders / separators
+    border: "rgba(244,245,246,0.04)",
+    // accent (like that blue button / progress)
+    primary: "#3B82F6", // you can tweak to #4363ff if you want closer to the image
   },
 };
 
 export const lightTheme: Theme = {
-  name: "light",
   colors: {
-    background: "#FFFFFF",
+    background: "#F5F5F5",
     surface: "#FFFFFF",
-    surfaceAlt: "#F3F4F6",
+    surfaceAlt: "#F0F2F5",
     text: "#0F172A",
     textMuted: "#6B7280",
-    border: "rgba(15, 23, 42, 0.07)",
-    primary: "#3B82F6",
-    primarySoft: "rgba(59,130,246,0.08)",
-    danger: "#DC2626",
+    border: "rgba(15,23,42,0.08)",
+    primary: "#2563EB",
   },
 };
