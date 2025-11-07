@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
-import { InputTextFields } from "./LoginWindow";
 import { Constants } from "../../../constants/Constants";
+import { InputTextFields } from "../../../common/components/InputTexFields";
 
 export const SignUpWindow = () => {
   return (

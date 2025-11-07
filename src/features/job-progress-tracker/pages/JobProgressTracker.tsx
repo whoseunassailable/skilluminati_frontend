@@ -1,20 +1,20 @@
-import { Box, Typography } from "@mui/material";
-import { JobProgressTrackerTitle } from "../components/JobProgressTrackerTitle";
-import { SkillSetBoxes } from "../components/SkillSetBoxes";
-import { JobProgressTrackerSubTitle } from "../components/JobProgressTrackerSubTitle";
+import { Box } from "@mui/material";
 
 export const JobProgressTracker = () => {
   return (
-    <Box>
-      <JobProgressTrackerTitle></JobProgressTrackerTitle>
+    <Box m={"10vw"}>
+      {/* <JobProgressTrackerTitle></JobProgressTrackerTitle>
       <JobProgressTrackerSubTitle></JobProgressTrackerSubTitle>
       <hr />
-      <Typography></Typography>
+      <Typography>Input</Typography>
+      <JDMessage></JDMessage>
+      <TextAndAnalyzeButton></TextAndAnalyzeButton>
+      <TopSkillsFound></TopSkillsFound>
       <ProgressDonePercent></ProgressDonePercent>
       <ProgressIndicator></ProgressIndicator>
       <hr />
       <NeededLearningSkillset></NeededLearningSkillset>
-      <SkillSetBoxes></SkillSetBoxes>
+      <SkillSetBoxes></SkillSetBoxes> */}
     </Box>
   );
 };

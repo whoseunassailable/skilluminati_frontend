@@ -1,6 +1,7 @@
-import { Box, Button, Link, TextField, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import { Constants } from "../../../constants/Constants";
 import { useNavigate } from "react-router-dom";
+import { InputTextFields } from "../../../common/components/InputTexFields";
 
 export const LoginWindow = () => {
   const navigate = useNavigate();
@@ -38,21 +39,6 @@ export const LoginWindow = () => {
           Sign Up
         </Link>
       </Typography>
-    </Box>
-  );
-};
-
-interface InputTextFieldsProps {
-  name: string;
-}
-
-export const InputTextFields = ({ name }: InputTextFieldsProps) => {
-  return (
-    <Box gridArea={"contact-form"}>
-      <Typography height={"2vh"}>{name}</Typography>
-      <Box height={"3vh"}></Box>
-      <TextField></TextField>
-      <Box height={"3vh"}></Box>
     </Box>
   );
 };
